@@ -11,15 +11,16 @@ function setup() {
     rectMode(CENTER)
 
 
-    // if (stop) noLoop();
-    // canvas.mousePressed(function () {
-    //     stop = !stop;
-    //     stop ? noLoop() : loop()
-    // })
+    if (stop) noLoop();
+    canvas.mousePressed(function () {
+        stop = !stop;
+        stop ? noLoop() : loop()
+    })
 
 }
 
 function draw() {
+
 
 
     // if (frameCount === 1) {
@@ -35,7 +36,7 @@ function draw() {
     translate(width / 2, height / 2)
 
 
-    for (let i = 0; i < s1.value() ; i++) {
+    for (let i = 0; i < s1.value(); i++) {
         push()
         
 
@@ -66,3 +67,4 @@ function draw() {
     // rect(0, 0, 200, 200)
 
 }
+
